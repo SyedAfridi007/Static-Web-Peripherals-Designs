@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <img src="images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type="text" placeholder="xyz@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="text" placeholder="1111-2222-3333-4444" data-mask="0000 0000 0000 0000">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp :</span>
+                        <input type="text" placeholder="MM / YY"  name="expiry-data"  data-mask="00 / 00">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVC :</span>
+                        <input type="text" placeholder="1234" data-mask="0000">
+                    </div>
+                </div>
+
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. john deo">
+                </div>
+                
+                <div class="inputBox custom-select">
+                    <span>Country or Region :</span>
+                    <select name="" id="">
+                        <option value="0">Select Region</option>
+                        <option value="bd">Bangladesh</option>
+                        <option value="ch">China</option>
+                        <option value="eu">European Union</option>
+                        <option value="in">India</option>
+                        <option value="kw">Kuwait</option>
+                        <option value="mal">Malaysia</option>
+                        <option value="su">Saudi Arabia</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="usa">United States Of America</option>
+                    </select>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+
+    </form>
+
+</div>    
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</body>
+</html>
