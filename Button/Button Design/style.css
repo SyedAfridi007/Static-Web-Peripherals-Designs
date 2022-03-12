@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+.btn-container{
+
+    width: 100%;
+    height: 200vh;
+    background:linear-gradient(120deg, yellow, orange);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+   
+}
+.btn1{
+
+    width: 5%;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient( 120deg, transparent 50% , hotpink 50% );
+    background-position: left;
+    background-size: 220%;
+    transition: background-position 0.5s;
+
+}
+.btn1 a{
+    text-decoration: none;
+    color: hotpink;
+    font-weight: bold;
+}
+.btn1:hover{
+
+    background-position: right;
+    
+}
+.btn1:hover a{
+
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+/*---------------------btn2-------------------------*/
+
+.button:link,
+.buttton:visited{
+
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+
+}
+
+.button{
+    width: 5%;
+    margin-left: -65px;
+    text-align: center;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2) ;
+
+}
+.button:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2) ;
+}
+
+.bt-pink{
+    background-color: hotpink;
+    color: white;
+}
+
+.button::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .4s;
+    z-index: -1;
+}
+.bt-pink::after{
+    background: hotpink;
+}
+
+.button:hover::after{
+
+    transform: scale(1.6) scaleY(1.6);
+    opacity: 0;
+
+}
+
+/*---------------------btn3-------------------------*/
+.btn3{
+    width: 5%;
+    padding: 10px;
+    text-align: center;   
+    border: 2px solid hotpink;
+    z-index: 1;
+    position: relative;
+    transition: ease-out 0.3s;
+}
+
+.btn3 a{
+    text-decoration: none;
+    color: hotpink;
+    font-weight: bold;
+}
+
+.btn3:hover a{
+
+    color: white;
+    font-weight: bolder;
+}
+
+.btn3::before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 50%;  
+    position: absolute;
+    background-color: hotpink;
+    transition: 0.5s all ease;
+    opacity: 0;
+}
+.btn3:hover::before{  
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: 0.5s all ease;
+}
+
+/*---------------------btn4-------------------------*/
+.btn4 a{
+
+    position: relative;
+    padding: 20px 40px;
+    color: hotpink;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn4 a:hover{
+    background-color: hotpink;
+    color: white;
+    transition-delay: 0.5s;
+}
+.btn4 a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    min-height: 10px;
+    border-top: 2px solid hotpink ;
+    border-left: 2px solid hotpink ;
+    transition: 0.5s;
+
+}
+
+.btn4 a::after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 10px;
+    min-height: 10px;
+    border-bottom: 2px solid hotpink ;
+    border-right: 2px solid hotpink ;
+    transition: 0.5s;
+
+}
+
+.btn4 a:hover:before{
+
+    width: 98%;
+    height: 95%;
+}
+
+.btn4 a:hover::after{
+
+    width: 98%;
+    height: 95%;
+}
+
+/*---------------------btn5-------------------------*/
+
+.btn5 a{
+    position: relative;
+    display: block;
+    padding: 20px 50px;
+    border: 2px solid #00aeff;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#00aeff;
+    overflow: hidden;
+}
+
+a span{
+
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+}
+a:hover span{ 
+
+    color: white;
+}
+
+a .wave{
+  
+    position: absolute;
+    top: calc(100% + 22px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00aeff;
+    transition: 1s;
+}
+
+a:hover .wave{   
+    top: 0;
+}
+
+a .wave::before{
+    content: '';
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    background:url(img/wave.png);
+    animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate{
+
+    0%{
+        background-position-x:0px ;
+    }
+    100%{
+        background-position-x:118px ;
+    }
+}
+
+
+/*---------------------btn6-------------------------*/
+.btn6{
+    
+    position: relative;
+    display: inline-flex;
+    padding: 20px 40px;
+    background-color: transparent;
+    border: 2px solid Hotpink;
+    overflow: hidden;
+    
+}
+.btn6 a{
+
+    position: relative;
+    z-index: 1;
+    color: hotpink;
+    text-decoration: none;
+    text-align: center;
+}
+.btn6:hover a{
+
+    color: white;
+}
+.btn6::before{
+    content: '';
+    position: absolute;
+    top:var(--y) ;
+    left:var(--x) ;
+    transform: translate(-50% ,-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: hotpink;
+    transition: width 1s, height 1s;
+
+}
+.btn6:hover::before{
+
+    width: 250px;
+    height: 250px;
+}
+
+/*---------------------btn7-------------------------*/
+.btn7 {
+    position: relative;
+    padding: 20px 40px;
+    background-color: transparent;
+    border: 2px solid Hotpink; 
+}
+.btn7 a{
+    text-decoration: none;
+    color: hotpink;
+}
+.btn7 a span{
+    position: relative;
+    z-index: 1;
+}
+.btn7:hover a{
+    color: white;
+    z-index: 0;
+}
+.btn7 a::before{
+   content: '';
+   position: absolute;
+   left: -25px;
+   top: 50%;
+   width: 25px;
+   height: 2px;
+   transform: translateY(-50%);
+   background: hotpink;
+   transition: 1s;
+}
+.btn7 a:hover::before{
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+    background: hotpink;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+ }
+.btn7 a::after{
+    content: '';
+    position: absolute;
+    left: 111.5px;
+    top: 50%;
+    width: 25px;
+    height: 2px;
+    transform: translateY(-50%);
+    background: hotpink;
+    transition: 1s;
+ }
+.btn7 a:hover::after{
+    left: 56px;
+    width: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+    background: hotpink;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+ }
+
+ /*---------------------btn8-------------------------*/
+
+ .btn8 a{
+
+    text-decoration: none;
+    color:hotpink;
+    position: relative;
+    font-size: 20px;
+    padding: 20px 40px;
+    z-index: 3;
+    
+ }
+ .btn8 a:hover{
+     color: white;
+     transition: 1s;
+ }
+
+ .btn8 span{
+     position: absolute;
+     width: 100%;
+     height: 25%;
+     background: hotpink;
+     z-index: -1;
+     left: 0;
+     top: 0;
+     transform: scaleX(0);
+     transition: 0.5s;
+     transform-origin: left;
+ }
+
+ .btn8 a:hover span{
+     transform: scaleX(1);
+      
+ }
+  
+ span:nth-child(2){
+     top: 25%;
+     transition-delay: 0.15s;
+ }
+
+ span:nth-child(3){
+    top: 50%;
+    transition-delay: 0.3s;
+}
+
+span:nth-child(4){
+    top: 75%;
+    transition-delay: 0.45s;
+}
+
+
+  /*---------------------btn9-------------------------*/
+
+.btn9{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    background:white;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    z-index: 0;
+    text-decoration: none;
+}
+
+.btn9 a{
+    text-decoration: none;
+    color: hotpink;
+}
+.btn9:hover a{
+    color: white;
+}
+.btn9::before{
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    height: 100%;
+    width:100%;
+    clip-path: polygon(0 0, 100% 0, 10% 25%, 0 100%);
+    z-index: -1;
+    background:hotpink;
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+
+.btn9:hover::before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   
+}
+
+  /*---------------------btn10-------------------------*/
+  .btn10{
+
+    width: 5%;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient( to right, transparent 50% , hotpink 50% );
+    background-position: left;
+    border: 2px solid hotpink;
+    background-size: 200%;
+    transition: background-position 0.5s;
+
+}
+.btn10 a{
+    text-decoration: none;
+    color: hotpink;
+    font-weight: bold;
+}
+.btn10:hover{
+
+    background-position: right;
+    
+}
+.btn10:hover a{
+
+    color: white;
+    font-weight: bolder;
+}
+
+  /*---------------------btn11-------------------------*/
+.btn11 a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn11{
+    border: 2px solid hotpink;
+    position: relative;
+    padding: 10px;
+    width: 5%;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.btn11::after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: hotpink;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: .7s;
+
+    
+}
+.btn11:hover::after{
+    opacity: 1;
+    width: 140%;
+    height: 140%;
+    transition: .5s;
+
+    
+
+}
+
+  /*---------------------btn12-------------------------*/
+.btn12{
+    background: tomato;
+    text-align: center;
+    height: 3%;
+    padding: 2rem;
+}
+  .btn12 a{
+      position: relative;
+      display: inline-block;
+      padding: 15px 30px;
+      border: 2px solid #111;
+      text-transform: uppercase;
+      color:#111;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 20px;
+  }
+  .btn12 a::before{
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% - 12px);
+      background: tomato;
+      transition: 0.5s ease-in-out;
+      transform: scaleY(1);
+      transition-delay:0.5s ;
+  }
+
+  .btn12 a:hover::before{
+      transform: scaleY(0);
+  }
+
+  .btn12 a::after{
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: tomato;
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+    
+}
+
+.btn12 a:hover::after{
+    transform: scaleX(0);
+}
+  .btn12 a span{
+      position: relative;
+      z-index: 3;
+  }
